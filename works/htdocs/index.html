@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- IE互換表示を制御するタグ -->
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
     <title>****</title>
@@ -12,9 +13,8 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
-    <link rel="shortcut icon" href="/images/common/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/common/favicon.ico">
     <link rel="index" href="">
-    <link rel="shortcut icon" href="">
 
     <!-- ogp -->
     <meta property="og:title" content="">
@@ -25,20 +25,106 @@
     <meta property="og:site_name" content="">
     <!-- /ogp -->
 
+    <link rel="apple-touch-icon-precomposed" href="https://www.hogehoge.co.jp/fugafuga.png">
+
     <!-- common CSS/JS -->
-    <link rel="stylesheet" href="/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="/css/utility.css" type="text/css">
-    <script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/utility.css" type="text/css">
+    <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="assets/js/general.js"></script>
     <!-- /common CSS/JS -->
 
     <!-- page original CSS/JS -->
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <script type="text/javascript" src=""></script>
     <!-- /page original CSS/JS -->
+
+
+    <style>
+        .bb-modal-layer {
+            display:none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.7);
+        }
+        .bb-modal-contents {
+            display: none;
+            position: absolute; /* 絶対配置 */
+            top: 50%; /* 上から半分の位置 */
+            left: 50%; /* 左から半分の位置 */
+            width: 200px;
+            height: 200px;
+            background: #fff;
+            -webkit-transform: translate(-50%,-50%);/* 要素の大きさの半分引く（CSS3） */
+            -moz-transform: translate(-50%,-50%);/* 要素の大きさの半分引く（CSS3） */
+            transform: translate(-50%,-50%);/* 要素の大きさの半分引く（CSS3） */
+        }
+    </style>
+    <style>
+        .test-box {
+            width: 960px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        .no1 {
+            font-size: 30px;
+            color: #fff;
+            background: red;
+        }
+        .no2 {
+            font-size: 30px;
+            color: #fff;
+            background: blue;
+        }
+        .no3 {
+            font-size: 30px;
+            color: #fff;
+            background: pink;
+        }
+        .no4 {
+            font-size: 30px;
+            color: #fff;
+            background: yellow;
+        }
+        .no5 {
+            font-size: 30px;
+            color: #fff;
+            background: gray;
+        }
+        .no6 {
+            font-size: 30px;
+            color: #fff;
+            background: green;
+        }
+    </style>
 
 </head>
 <body>
 <!--#include virtual="/ssi/header.html" -->
+
+
+    <div class="test-box no1">
+        <div class="bb-modal-contents">
+            <p class="bb-close-modal">asdfasdf</p>
+        </div>
+        <div class="bb-modal">button</div>
+    </div>
+
+    <div class="test-box no2">
+        <p class="gjs-changeimg--hover">asdfsdf</p>
+    </div>
+
+    <div class="test-box no3"></div>
+
+    <div class="test-box no4"></div>
+
+    <div class="test-box no5"></div>
+
+    <div class="test-box no6"></div>
+
 <!--#include virtual="/ssi/footer.html" -->
 </body>
 </html>
