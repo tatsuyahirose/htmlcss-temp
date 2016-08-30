@@ -1,0 +1,12 @@
+#set root(true or false)
+root = true
+
+[*]
+#set charset
+charset = utf-8
+
+#set indent size
+indent_size = 4
+
+#set indent style(tab or space)
+indent_style = tab
