@@ -6,7 +6,11 @@ root = true
 charset = utf-8
 
 #set indent size
-indent_size = 4
+indent_size = 2
 
 #set indent style(tab or space)
-indent_style = tab
+indent_style = space
+
+
+[{*.html, *.css, *.scss}]
+indent_size = 4
